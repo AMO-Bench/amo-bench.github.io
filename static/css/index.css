@@ -25,10 +25,10 @@
 
 /** 调整宽度**/
 /* Increase container width for wider page */
-/*
+
 .container.is-max-desktop {
   max-width: 1440px !important;
-  width: 100% !important;
+  width: 80% !important;
 }
 
 @media screen and (min-width: 1024px) {
@@ -47,7 +47,7 @@
   .container.is-max-desktop {
     max-width: 1800px !important;
   }
-}*/
+}
 
 /* Smooth scrolling for better UX */
 html {

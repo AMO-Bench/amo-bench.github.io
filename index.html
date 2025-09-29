@@ -7,60 +7,37 @@
 
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="VitaBench: Benchmarking LLM Agents with Versatile
-Interactive Tasks in Real-world Applications">
+  <meta name="title" content="VitaBench: Benchmarking LLM Agents with Versatile Interactive Tasks in Real-world Applications">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta name="description" content="VitaBench is a challenging benchmark that evaluates agents on versatile interactive tasks grounded in real-world settings, comprising 66 tools and 400 tasks.">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <meta name="keywords" content="Large Language Models, Agents, Benchmark, Real-world Applications">
   <!-- TODO: List all authors -->
-  <meta name="author" content="Wei He, SECOND_AUTHOR_NAME">
+  <meta name="author" content="Wei He, Yueqing Sun, Hongyan Hao, Xueyuan Hao, Zhikang Xia, Qi Gu, Chengcheng Han, Dengchang Zhao, Hui Su, Kefeng Zhang, Man Gao, Xi Su, Xiaodong Cai, Xunliang Cai, Yu Yang, Yunke Zhao">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <meta property="og:site_name" content="Meituan LongCat Team">
   <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="VitaBench: Benchmarking LLM Agents with Versatile
-Interactive Tasks in Real-world Applications">
+  <meta property="og:title" content="VitaBench: Benchmarking LLM Agents with Versatile Interactive Tasks in Real-world Applications">
   <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta property="og:description" content="VitaBench is a challenging benchmark that evaluates agents on versatile interactive tasks grounded in real-world settings, comprising 66 tools and 400 tasks.">
   <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <meta property="og:url" content="https://vitabench.github.io">
   <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image" content="https://vitabench.github.io/static/images/method.png">
   <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="og:image:height" content="604">
+  <meta property="og:image:alt" content="Overview of the VitaBench construction pipeline.">
+  <meta property="article:published_time" content="2025-09-30T00:00:00.000Z">
+  <meta property="article:author" content="Wei He">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="Large Language Models">
+  <meta property="article:tag" content="Agents">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
-
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
 
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
@@ -77,8 +54,7 @@ Interactive Tasks in Real-world Applications">
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>VitaBench: Benchmarking LLM Agents with Versatile
-    Interactive Tasks in Real-world Applications</title>
+  <title>VitaBench: Benchmarking LLM Agents with Versatile Interactive Tasks in Real-world Applications</title>
 
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -116,79 +92,9 @@ Interactive Tasks in Real-world Applications">
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
 
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
 </head>
 
 <body>
-
-
   <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
@@ -202,54 +108,56 @@ Interactive Tasks in Real-world Applications">
           <div class="columns is-centered">
             <div class="column has-text-centered">
               <!-- TODO: Replace with your paper title -->
-              <h1 class="title is-1 publication-title">VitaBench: Benchmarking LLM Agents with Versatile
-                Interactive Tasks in Real-world Applications</h1>
+              <h1 class="title is-1 publication-title">🌱VitaBench: Benchmarking LLM Agents <br> 
+                with Versatile Interactive Tasks in Real-world Applications</h1>
               <div class="is-size-5 publication-authors">
                 <!-- TODO: Replace with your paper authors and their personal links -->
                 <span class="author-block">
-                  <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Wei He</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  Yueqing Sun<sup>*</sup>,
+                  <a href="https://scholar.google.com/citations?user=pVjaal0AAAAJ&hl=zh-CN" target="_blank">Wei He</a><sup>†</sup>,
                 </span>
                 <span class="author-block">
-                  Hongyan Hao<sup>*</sup>,
+                  <a href="https://scholar.google.com/citations?user=6GyAX-MAAAAJ&hl=zh-CN" target="_blank">Yueqing Sun</a>,
                 </span>
                 <span class="author-block">
-                  Xueyuan Hao<sup>*</sup>,
+                  <a href="https://openreview.net/profile?id=~Hongyan_Hao1" target="_blank">Hongyan Hao</a>,
                 </span>
                 <span class="author-block">
-                  Zhikang Xia<sup>*</sup>,
+                  <a href="https://openreview.net/profile?id=~Xueyuan_Hao1" target="_blank">Xueyuan Hao</a>,
                 </span>
                 <span class="author-block">
-                  Qi Gu,
+                  <a href="https://openreview.net/profile?id=~Zhikang_Xia1" target="_blank">Zhikang Xia</a>,
+                </span>
+                <span class="author-block">
+                  <a href="https://openreview.net/profile?id=~Qi_GU2" target="_blank">Qi Gu</a><sup>†</sup>,
                 </span>
                 <br>
                 <span class="author-block">
                   Chengcheng Han,
                 </span>
                 <span class="author-block">
-                  Xi Su,
-                </span>
-                <span class="author-block">
                   Dengchang Zhao,
-                </span>
-                <span class="author-block">
-                  Xiaodong Cai,
                 </span>
                 <span class="author-block">
                   Hui Su,
                 </span>
                 <span class="author-block">
-                  Xunliang Cai,
-                </span>
-                <span class="author-block">
                   Kefeng Zhang,
                 </span>
                 <span class="author-block">
-                  Yu Yang,
+                  Man Gao,
                 </span>
                 <span class="author-block">
-                  Man Gao,
+                  Xi Su,
+                </span>
+                <br>
+                <span class="author-block">
+                  Xiaodong Cai,
+                </span>
+                <span class="author-block">
+                  Xunliang Cai,
+                </span>
+                <span class="author-block">
+                  Yu Yang,
                 </span>
                 <span class="author-block">
                   Yunke Zhao
@@ -258,9 +166,15 @@ Interactive Tasks in Real-world Applications">
 
               <div class="is-size-5 publication-authors">
                 <!-- TODO: Replace with your institution and conference/journal info -->
-                <span class="author-block">Meituan LongCat Team.<br></span>
+                <span class="author-block">
+                  <a href="https://github.com/meituan-longcat" target="_blank">Meituan LongCat Team</a>
+                </span>
+                <br>
+                <span class="author-block">
+                  <small>†Correspondence to: <code>whe23@m.fudan.edu.cn</code>, <code>guqi03@meituan.com</code></small>
+                </span>
                 <!-- TODO: Remove this line if no equal contribution -->
-                <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                <span class="eql-cntrb"><small><br>The first six authors are core contributors.</small></span>
               </div>
 
               <div class="column has-text-centered">
@@ -270,7 +184,7 @@ Interactive Tasks in Real-world Applications">
                     <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
+                        📃
                       </span>
                       <span>Paper</span>
                     </a>
@@ -284,6 +198,17 @@ Interactive Tasks in Real-world Applications">
                         🤗
                       </span>
                       <span>Dataset</span>
+                    </a>
+                  </span>
+
+                  <!-- Leaderboard 链接 -->
+                  <span class="link-block">
+                    <a href="#Leaderboard"
+                      class="button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        🏆
+                      </span>
+                      <span>Leaderboard</span>
                     </a>
                   </span>
 
@@ -327,16 +252,16 @@ Interactive Tasks in Real-world Applications">
               <!-- TODO: Replace with your paper abstract -->
               <p>
                 As LLM-based agents are increasingly deployed in real-life scenarios, existing benchmarks fail to capture their inherent complexity of handling extensive information, leveraging diverse resources, and managing dynamic user interactions.
-                To address this gap, we introduce <b>VitaBench</b>, a challenging benchmark that evaluates agents on <u>v</u>ersatile <u>i</u>nteractive <u>ta</u>sks grounded in real-world settings.
+                To address this gap, we introduce <b>VitaBench</b>, a challenging benchmark that evaluates agents on <b><u>v</u></b>ersatile <b><u>i</u></b>nteractive <b><u>ta</u></b>sks grounded in real-world settings.
                 Drawing from daily applications in food delivery, in-store consumption, and online travel services, VitaBench presents agents with the most complex life-serving simulation environment to date, comprising 66 tools.
-                Through a framework that eliminates domain-specific policies, we enable flexible composition of these scenarios and tools, yielding 100 cross-scenario tasks (main results) and 300 single scenario tasks. 
+                Through a framework that eliminates domain-specific policies, we enable flexible composition of these scenarios and tools, yielding 100 cross-scenario tasks (main results) and 300 single-scenario tasks. 
                 Each task is derived from multiple real user requests and requires agents to reason across temporal and spatial dimensions, utilize complex tool sets, proactively clarify ambiguous instructions, and track shifting user intent throughout multi-turn conversations.
                 Moreover, we propose a rubric-based sliding window evaluator, enabling robust assessment of diverse solution pathways in complex environments and stochastic interactions.
                 Our comprehensive evaluation reveals that even the most advanced models achieve only 30% success rate on cross-scenario tasks, and less than 50% success rate on others.
                 Overall, we believe VitaBench will serve as a valuable resource for advancing the development of AI agents in practical real-world applications.
               </p>
               <p>
-                <img src="static/images/overall_performance.png" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy" />
+                <img src="static/images/overview.png" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy" />
               </p>
             </div>
           </div>
@@ -352,14 +277,12 @@ Interactive Tasks in Real-world Applications">
           <div class="column is-full">
             <div class="content">
               <h2 class="title is-3">Overview</h2>
-                
+              <div class="level-set has-text-justified">
                 <p>
-                      We conduct 4 motivating experiments that illustrate the benefits of learning within Model Trees. In each experiment, we train a linear classifier to predict the classes a ViT model was fine-tuned on.
-                  First, we show that <em>learning within Model Trees is significantly simpler (a)</em> by comparing a metanetwork trained on models from the same tree \(T\) with one trained on models from different trees \(F\). Next, we demonstrate <em>positive transfer within the same tree (b)</em> by showing that adding more models from the same tree improves the performance.  Surprisingly, we observe <em>negative transfer between Model Trees (c)</em>, where adding samples from other trees degrades performance on a single tree. Finally, we find that <em>expert learning is preferable when learning from multiple trees (d)</em>, as a single shared metanetwork performs worse than an expert metanetwork per tree (MoE).
+                  This plot summarizes per-model success rates under our two evaluation regimes. The most striking observation is the consistent and large performance gap: even the best model reaches only <strong>48.3%</strong> success on the 300 single-scenario tasks, while performance falls to <strong>30.0%</strong> on the 100 cross-scenario tasks. This sharp drop highlights challenges in domain switching, expanded tool selection, and long-horizon coordination. Relative model rankings are broadly preserved, but absolute success rates remain low—indicating substantial headroom for improvement.
                 </p>
-
-                <img src="static/images/overview.png" alt="Sizes of model trees" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy" />
-            </div>
+                <img src="static/images/overall_performance.png" alt="Sizes of model trees" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy" />
+              </div>
           </div>
         </div>
       </div>
@@ -373,8 +296,10 @@ Interactive Tasks in Real-world Applications">
               <h2 class="title is-3">Method</h2>
               <div class="level-set has-text-justified">
                   <p>
-                    We show the 10 largest Model Trees on Hugging Face. Our insight is that learning an expert for each tree greatly simplifies weight-space learning. This is a practical setting as a few large Model Trees dominate the landscape.
+                    VitaBench is built through a two-stage pipeline. <strong>Stage I (Framework Design)</strong> abstracts real life-serving scenarios — Delivery, In-store Consumption, and OTA — into a directed graph of simplified API tools with explicit pre-/post-conditions and inter-tool dependencies, thereby encoding domain rules directly into tool structures and enabling cross-domain composition. <strong>Stage II (Task Creation)</strong> constructs tasks from anonymized real user profiles, composite instructions, and realistic environments augmented with curated distractors and transaction histories. Each task is iteratively validated with human checks to ensure clarity while preserving multiple valid solutions, resulting in 400 tasks with comprehensive databases.
                   </p>
+                  <img src="static/images/method.png" alt="Overview of the VitaBench construction pipeline" class="blend-img-background center-image" style="max-width: 90%; height: auto; display: block; margin: 0 auto;" loading="lazy" />
+
               </div>
             </div>
           </div>
@@ -382,16 +307,21 @@ Interactive Tasks in Real-world Applications">
       </div>
     </section>
     
-    <section class="section hero is-small">
+    <section id="Leaderboard" class="section hero is-small">
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column is-full">
             <div class="content">
-              <h2 class="title is-3">Leaderboard</h2>
-              <table border="1" cellspacing="0" cellpadding="4" style="border-collapse: collapse; text-align: center; width: 120%;">
+              <h2 class="title is-3">🏆Leaderboard🏆</h2>
+              
+                <p>
+                  Here we present comprehensive evaluation results on VitaBench. Last updated on <code>2025-09-30</code>.
+                </p>
+              
+              <table border="1" cellspacing="0" cellpadding="4" style="border-collapse: collapse; text-align: center; width: 100%;">
                 <thead>
                   <tr>
-                    <th rowspan="3" style="width: 300px; min-width: 150px; text-align: left; padding-left: 10px;">Models</th>
+                    <th rowspan="3" style="width: 300px; min-width: 150px; padding-top: 40px;">Models</th>
                     <th colspan="3">Cross-Scenarios</th>
                     <th colspan="3">Delivery</th>
                     <th colspan="3">In-store</th>
@@ -450,7 +380,11 @@ Interactive Tasks in Real-world Applications">
                 </tbody>
               </table>
               
-              
+              <p>
+                For more detailed analysis, please refer to our paper on <a href="https://arxiv.org/abs/xxxx.xxxxx" target="_blank">arXiv</a>.
+              </p>
+
+
               </div>
             </div>
           </div>
@@ -472,8 +406,13 @@ Interactive Tasks in Real-world Applications">
             <span class="copy-text">Copy</span>
           </button>
         </div>
-        <pre id="bibtex-code"><code>@article{TODO}
-}</code></pre>
+        <pre id="bibtex-code"><code>@article{he2025vitabench,
+    title={VitaBench: Benchmarking LLM Agents with Versatile Interactive Tasks in Real-world Applications}, 
+    author={He, Wei and Sun, Yueqing and Hao, Hongyan and Hao, Xueyuan and Xia, Zhikang and Gu, Qi and Han, Chengcheng and Zhao, Dengchang and Su, Hui and Zhang, Kefeng and Gao, Man and Su, Xi and Cai, Xiaodong and Cai, Xunliang and Yang, Yu and Zhao, Yunke},
+    journal={arXiv preprint arXiv:2510.xxxxx},
+    year={205}
+}
+</code></pre>
       </div>
     </section>
     <!--End BibTex citation -->
@@ -489,10 +428,6 @@ Interactive Tasks in Real-world Applications">
                 This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
                   target="_blank">Academic Project Page Template</a> which was adopted from the <a
                   href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-                You are free to borrow the source code of this website, we just ask that you link back to this page in
-                the footer. <br> This website is licensed under a <a rel="license"
-                  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-                  Commons Attribution-ShareAlike 4.0 International License</a>.
               </p>
 
             </div>
