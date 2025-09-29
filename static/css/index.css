@@ -23,6 +23,32 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/** 调整宽度**/
+/* Increase container width for wider page */
+/*
+.container.is-max-desktop {
+  max-width: 1440px !important;
+  width: 100% !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .container.is-max-desktop {
+    max-width: 1440px !important;
+  }
+}
+
+@media screen and (min-width: 1216px) {
+  .container.is-max-desktop {
+    max-width: 1600px !important;
+  }
+}
+
+@media screen and (min-width: 1408px) {
+  .container.is-max-desktop {
+    max-width: 1800px !important;
+  }
+}*/
+
 /* Smooth scrolling for better UX */
 html {
   scroll-behavior: smooth;
