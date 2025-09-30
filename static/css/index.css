@@ -23,6 +23,65 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Rank badge styles (Leaderboard top-3) */
+.rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #1f2937; /* slate-800 */
+  background: #e5e7eb; /* gray-200 */
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.06);
+}
+
+/* Leaderboard: highlight Cross-Scenarios Avg@4 column */
+.leaderboard-table th.sort-key {
+  background: #e8f2ff; /* very light blue */
+}
+
+/* The Cross-Scenarios Avg@4 is the 3rd numeric column overall (after Rank, Models) */
+.leaderboard-table tbody tr td:nth-child(3) {
+  background: #f2f7ff; /* subtle lighter blue for body */
+}
+
+/* Leaderboard model cell with logo */
+.leaderboard-table .model-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.leaderboard-table .model-cell .logo {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.rank-badge.gold {
+  background: radial-gradient(circle at 30% 30%, #fff7cc, #ffd700 60%, #f4c20d 100%);
+  color: #7a5e00;
+  box-shadow: inset 0 0 0 1px rgba(122,94,0,0.2), 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.rank-badge.silver {
+  background: radial-gradient(circle at 30% 30%, #f7f7f7, #d9d9d9 60%, #bfbfbf 100%);
+  color: #4b5563; /* gray-600 */
+  box-shadow: inset 0 0 0 1px rgba(75,85,99,0.2), 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.rank-badge.bronze {
+  background: radial-gradient(circle at 30% 30%, #ffe2c4, #cd7f32 60%, #b5651d 100%);
+  color: #5a2e00;
+  box-shadow: inset 0 0 0 1px rgba(90,46,0,0.2), 0 2px 6px rgba(0,0,0,0.08);
+}
+
 /** 调整宽度**/
 /* Increase container width for wider page */
 
