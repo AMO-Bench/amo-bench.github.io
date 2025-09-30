@@ -55,13 +55,18 @@
   align-items: center;
   gap: 8px;
   justify-content: flex-start;
+  white-space: nowrap; /* 防止模型名与图标换行导致布局跳变 */
 }
 
 .leaderboard-table .model-cell .logo {
   width: 20px;
   height: 20px;
-  display: inline-block;
-  vertical-align: middle;
+  max-width: 20px;
+  max-height: 20px;
+  flex: 0 0 20px; /* 明确不允许在 flex 布局中被拉伸 */
+  object-fit: contain; /* 确保 SVG/图片按比例缩放到框内 */
+  aspect-ratio: 1 / 1; /* 对无固有尺寸的 SVG 更稳定 */
+  display: block; /* 避免行内基线造成的额外行高 */
 }
 
 .rank-badge.gold {
