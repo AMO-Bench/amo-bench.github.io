@@ -28,7 +28,7 @@
   <!-- TODO: Replace with your actual website URL -->
   <meta property="og:url" content="https://amo-bench.github.io">
   <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://vitabench.github.io/static/images/method.png">
+  <meta property="og:image" content="https://vitabench.github.io/static/images/main_result.pdf">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="604">
   <meta property="og:image:alt" content="Overview of the AMO-Bench construction pipeline.">
@@ -190,6 +190,19 @@
                       <span>Paper</span>
                     </a>
                   </span>
+
+                  
+                  <!-- TODO: Replace with your GitHub repository URL -->
+                  <span class="link-block">
+                    <a href="https://github.com/meituan-longcat/vitabench" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+                  
                   
                   <!-- Dataset -->
                   <span class="link-block">
@@ -202,6 +215,7 @@
                     </a>
                   </span>
 
+                  
                   <!-- Leaderboard 链接 -->
                   <span class="link-block">
                     <a href="#Leaderboard"
@@ -213,18 +227,7 @@
                     </a>
                   </span>
 
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/meituan-longcat/vitabench" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>Code</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Update with your arXiv paper ID -->
+                  <!-- <!-- TODO: Update with your arXiv paper ID -->
                   <span class="link-block">
                     <a href="https://arxiv.org/abs/2509.26490" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -233,7 +236,8 @@
                       </span>
                       <span>arXiv</span>
                     </a>
-                  </span>
+                  </span> -->
+                  
                 </div>
               </div>
             </div>
@@ -252,14 +256,17 @@
             <div class="content has-text-justified">
               <!-- TODO: Replace with your paper abstract -->
               <p>
-                As LLM-based agents are increasingly deployed in real-life scenarios, existing benchmarks fail to capture their inherent complexity of handling extensive information, leveraging diverse resources, and managing dynamic user interactions.
-                To address this gap, we introduce <b>VitaBench</b>, a challenging benchmark that evaluates agents on <b><u>v</u></b>ersatile <b><u>i</u></b>nteractive <b><u>ta</u></b>sks grounded in real-world settings.
-                Drawing from daily applications in food delivery, in-store consumption, and online travel services, VitaBench presents agents with the most complex life-serving simulation environment to date, comprising 66 tools.
-                Through a framework that eliminates domain-specific policies, we enable flexible composition of these scenarios and tools, yielding 100 cross-scenario tasks (main results) and 300 single-scenario tasks. 
-                Each task is derived from multiple real user requests and requires agents to reason across temporal and spatial dimensions, utilize complex tool sets, proactively clarify ambiguous instructions, and track shifting user intent throughout multi-turn conversations.
-                Moreover, we propose a rubric-based sliding window evaluator, enabling robust assessment of diverse solution pathways in complex environments and stochastic interactions.
-                Our comprehensive evaluation reveals that even the most advanced models achieve only 30% success rate on cross-scenario tasks, and less than 50% success rate on others.
-                Overall, we believe VitaBench will serve as a valuable resource for advancing the development of AI agents in practical real-world applications.
+                We present <b><u>AMO-Bench</u></b>, an <b><u>A</u></b>dvanced <b><u>M</u></b>athematical reasoning benchmark with <b>O</b>lympiad level or even higher difficulty, comprising 50 human-crafted problems. 
+                Existing benchmarks have widely leveraged high school math competitions for evaluating mathematical reasoning capabilities of large language models (LLMs). 
+                However, many existing math competitions are becoming less effective for assessing top-tier LLMs due to performance saturation (e.g., AIME24/25). 
+                To address this, AMO-Bench introduces more rigorous challenges by ensuring all 50 problems are 
+                (1) cross-validated by experts to meet at least the International Mathematical Olympiad (IMO) difficulty standards, and 
+                (2) entirely original problems to prevent potential performance leakages from data memorization. 
+                Moreover, each problem in AMO-Bench requires only a final answer rather than a proof, enabling automatic and robust grading for evaluation. 
+                Experimental results across 26 LLMs on AMO-Bench show that even the best-performing model achieves only 52.4% accuracy on AMO-Bench, with most LLMs scoring below 40%. 
+                Beyond these poor performances, our further analysis reveals a promising scaling trend with increasing test-time compute on AMO-Bench. 
+                These results highlight the significant room for improving the mathematical reasoning in current LLMs. 
+                We release AMO-Bench to facilitate further research into advancing the reasoning abilities of language models.
               </p>
               <p>
                 <img src="static/images/overview.png" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy" />
@@ -455,6 +462,7 @@
 
 
 </html>
+
 
 
 
