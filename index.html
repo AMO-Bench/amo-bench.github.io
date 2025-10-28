@@ -276,13 +276,18 @@
         <div class="columns is-centered has-text-centered">
           <div class="column is-full">
             <div class="content">
-              <h2 class="title is-3">Overview</h2>
+              <h2 class="title is-3">Dataset Statistics</h2>
               <div class="level-set has-text-justified">
                 <p>
-                  This figure summarizes the AVG@32 performance of various leading LLMs, categorized by proprietary/open-source status and reasoning/non-reasoning properties. 
-                  Even the highest performing model GPT-5-Thinking (High) reaches just <strong>52.4%</strong>, while most others score below <strong>40%</strong>. 
-                  This indicates substantial room for improvement in complex reasoning abilities across all current language models. 
-                  Moreover, both proprietary and open-source reasoning models occupy top ranks in the leaderboard, indicating that recent open-source advancements are closing the gap with leading commercial models. 
+                  <b>Problem categories:</b> Referring several official competition syllabus, we categorize the 50 problems of AMO-Bench into the following five primary categories: 
+                  Algebraic Equations & Inequalities (11/50), Functions & Sequences (13/50), Geometry (5/50), Number Theory (9/50), and Combinatorics (12/50). 
+                  Figure a show the overall distribution of problem categories in AMO-Bench.
+
+                  <b>Length distribution of human-annotated solutions:</b> 
+                  Since the problems in our AMO-Bench are equipped with manually annotated solutions, we can preliminarily analyze the reasoning complexity of these problems from the view of solution length. 
+                  We measure solution length in terms of token count. Additionally, we compare the distribution of solution lengths with those from AIME24 and MATH500. 
+                  Figure b illustrates the solution length distributions across these benchmarks. 
+                  It reveals that solutions in AMO-Bench exhibit significantly higher lengths, indicating that problems in this benchmark are inherently more challenging and require more complex reasoning to arrive at the final answer. 
                 </p>
                 <img src="static/images/AMO_result.png" alt="Sizes of model trees" class="blend-img-background center-image" style="max-width: 99%; height: auto;" loading="lazy" />
               </div>
@@ -352,102 +357,6 @@
     </section>
 
 
-    
-    <section  class="section hero is-small">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-full">
-            <div class="content">
-              <h2 class="title is-3">🏆Leaderboard🏆</h2>
-              
-                <p>
-                  Here we present comprehensive evaluation results on VitaBench. Last updated on <code>2025-10-16</code>.
-                  For more detailed analysis, please refer to our paper on <a href="https://arxiv.org/abs/2509.26490" target="_blank">arXiv</a>.
-                </p>
-              
-              <table class="leaderboard-table" border="1" cellspacing="0" cellpadding="4" style="border-collapse: collapse; text-align: center; width: 100%;">
-                <thead>
-                  <tr>
-                    <th rowspan="3" style="width: 60px; min-width: 50px; padding-top: 40px;">Rank</th>
-                    <th rowspan="3" style="width: 350px; min-width: 150px; padding-top: 40px;">Models</th>
-                    <th colspan="3">Cross-Scenarios</th>
-                    <th colspan="3">Delivery</th>
-                    <th colspan="3">In-store</th>
-                    <th colspan="3">OTA</th>
-                  </tr>
-                  <tr>
-                    <th class="sort-key">Avg</br>@4</th>
-                    <th>Pass</br>@4</th>
-                    <th>Pass</br>^4</th>
-                    <th>Avg</br>@4</th>
-                    <th>Pass</br>@4</th>
-                    <th>Pass</br>^4</th>
-                    <th>Avg</br>@4</th>
-                    <th>Pass</br>@4</th>
-                    <th>Pass</br>^4</th>
-                    <th>Avg</br>@4</th>
-                    <th>Pass</br>@4</th>
-                    <th>Pass</br>^4</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <!-- Thinking Models -->
-                  <tr style="background-color:#eee; font-weight:bold; font-style:italic;">
-                    <td colspan="14">Thinking Models</td>
-                  </tr>
-                  <tr><td><span class="rank-badge gold">1</span></td><td><span class="model-cell"><img class="logo" src="static/images/openai.svg" alt="OpenAI" />o3 (high)</span></td><td><b>30.0</b></td><td><b>61.0</b></td><td><b>6.0</b></td><td>53.5</td><td>83.0</td><td><b>24.0</b></td><td>53.5</td><td><b>86.0</b></td><td>19.0</td><td><b>37.8</b></td><td><b>66.0</b></td><td>10.0</td></tr>
-                  <tr><td><span class="rank-badge silver">2</span></td><td><span class="model-cell"><img class="logo" src="static/images/anthropic.svg" alt="Anthropic" />Claude-4.1-Opus (w/ thinking)</span></td><td>29.0</td><td>56.0</td><td><b>6.0</b></td><td>47.5</td><td>80.0</td><td>17.0</td><td>52.5</td><td>78.0</td><td>20.0</td><td>32.3</td><td>57.0</td><td>9.0</td></tr>
-                  <tr><td><span class="rank-badge bronze">3</span></td><td><span class="model-cell"><img class="logo" src="static/images/longcat.svg" alt="LongCat" />LongCat-Flash-Thinking</span></td><td>24.3</td><td>54.0</td><td>3.0</td><td>42.3</td><td>71.0</td><td>13.0</td><td><b>56.8</b></td><td>85.0</td><td><b>25.0</b></td><td>28.3</td><td>59.0</td><td>6.0</td></tr>
-                  <tr><td>4</td><td><span class="model-cell"><img class="logo" src="static/images/gemini.svg" alt="Google" />Gemini-2.5-Pro</span></td><td>23.5</td><td>53.0</td><td>5.0</td><td>49.0</td><td>81.0</td><td>16.0</td><td>43.8</td><td>78.0</td><td>12.0</td><td>26.5</td><td>54.0</td><td>6.0</td></tr>
-                  <tr><td>5</td><td><span class="model-cell"><img class="logo" src="static/images/anthropic.svg" alt="Anthropic" />Claude-4-Sonnet (w/ thinking)</span></td><td>23.0</td><td>51.0</td><td><b>6.0</b></td><td>46.0</td><td>78.0</td><td>15.0</td><td>51.5</td><td>80.0</td><td>21.0</td><td>29.0</td><td>55.0</td><td>9.0</td></tr>
-                  <tr><td>6</td><td><span class="model-cell"><img class="logo" src="static/images/openai.svg" alt="OpenAI" />GPT-5 (high)</span></td><td>22.8</td><td>51.0</td><td>3.0</td><td><b>54.0</b></td><td><b>85.0</b></td><td>23.0</td><td>52.5</td><td><b>86.0</b></td><td>21.0</td><td>37.5</td><td>64.0</td><td><b>16.0</b></td></tr>
-                  <tr><td>7</td><td><span class="model-cell"><img class="logo" src="static/images/zai.svg" alt="ZhipuAI" />GLM-4.5 (w/ thinking)</span></td><td>22.8</td><td>48.0</td><td>2.0</td><td>44.5</td><td>77.0</td><td>14.0</td><td>52.8</td><td>80.0</td><td>22.0</td><td>28.8</td><td>55.0</td><td>7.0</td></tr>
-                  <tr><td>8</td><td><span class="model-cell"><img class="logo" src="static/images/openai.svg" alt="OpenAI" />o4-mini (high)</span></td><td>19.5</td><td>49.0</td><td>1.0</td><td>44.5</td><td>80.0</td><td>15.0</td><td>46.5</td><td>81.0</td><td>15.0</td><td>23.5</td><td>50.0</td><td>5.0</td></tr>
-                  <tr><td>9</td><td><span class="model-cell"><img class="logo" src="static/images/qwen.svg" alt="Qwen" />Qwen3-235B-A22B-Thinking-2507</span></td><td>18.8</td><td>45.0</td><td>2.0</td><td>44.0</td><td>78.0</td><td>9.0</td><td>46.0</td><td>80.0</td><td>9.0</td><td>17.5</td><td>41.0</td><td>2.0</td></tr>
-                  <tr><td>10</td><td><span class="model-cell"><img class="logo" src="static/images/bytedance.svg" alt="ByteDance" />Doubao-Seed-1.6-Thinking</span></td><td>17.0</td><td>42.0</td><td>1.0</td><td>30.3</td><td>59.0</td><td>10.0</td><td>43.3</td><td>78.0</td><td>10.0</td><td>18.0</td><td>45.0</td><td>2.0</td></tr>
-                  <tr><td>11</td><td><span class="model-cell"><img class="logo" src="static/images/deepseek.svg" alt="DeepSeek" />DeepSeek-R1-0528</span></td><td>14.5</td><td>39.0</td><td>0.0</td><td>40.3</td><td>72.0</td><td>11.0</td><td>41.3</td><td>79.0</td><td>7.0</td><td>13.0</td><td>32.0</td><td>2.0</td></tr>
-                  <tr><td>12</td><td><span class="model-cell"><img class="logo" src="static/images/gemini.svg" alt="Google" />Gemini-2.5-Flash (think on)</span></td><td>5.3</td><td>14.0</td><td>0.0</td><td>32.0</td><td>62.0</td><td>9.0</td><td>23.0</td><td>57.0</td><td>3.0</td><td>18.3</td><td>39.0</td><td>1.0</td></tr>
-                  <tr><td>13</td><td><span class="model-cell"><img class="logo" src="static/images/qwen.svg" alt="Qwen" />Qwen3-32B (w/ thinking)</span></td><td>5.0</td><td>24.0</td><td>0.0</td><td>22.8</td><td>53.0</td><td>4.0</td><td>26.5</td><td>60.0</td><td>3.0</td><td>7.3</td><td>18.0</td><td>1.0</td></tr>
-
-                  <!-- Non-thinking Models -->
-                  <tr style="background-color:#eee; font-weight:bold; font-style:italic;">
-                    <td colspan="14">Non-thinking Models</td>
-                  </tr>
-                  <tr><td><span class="rank-badge gold">1</span></td><td><span class="model-cell"><img class="logo" src="static/images/anthropic.svg" alt="Anthropic" />Claude-4.1-Opus (w/o thinking)</span></td><td><b>21.8</b></td><td>47.0</td><td>3.0</td><td><b>46.0</b></td><td><b>78.0</b></td><td>13.0</td><td><b>53.8</b></td><td><b>85.0</b></td><td><b>21.0</b></td><td><b>30.8</b></td><td><b>60.0</b></td><td><b>9.0</b></td></tr>
-                  <tr><td><span class="rank-badge silver">2</span></td><td><span class="model-cell"><img class="logo" src="static/images/anthropic.svg" alt="Anthropic" />Claude-4-Sonnet (w/o thinking)</span></td><td>21.3</td><td><b>49.0</b></td><td><b>4.0</b></td><td>39.0</td><td>69.0</td><td>17.0</td><td>46.3</td><td>78.0</td><td>10.0</td><td>25.0</td><td>49.0</td><td>7.0</td></tr>
-                  <tr><td><span class="rank-badge bronze">3</span></td><td><span class="model-cell"><img class="logo" src="static/images/longcat.svg" alt="LongCat" />LongCat-Flash-Chat</span></td><td>20.3</td><td>45.0</td><td>2.0</td><td>39.5</td><td>71.0</td><td>15.0</td><td>50.5</td><td>84.0</td><td>15.0</td><td>22.8</td><td>49.0</td><td>2.0</td></tr>
-                  <tr><td>4</td><td><span class="model-cell"><img class="logo" src="static/images/zai.svg" alt="ZhipuAI" />GLM-4.5 (w/o thinking)</span></td><td>20.0</td><td>47.0</td><td>1.0</td><td>45.8</td><td>72.0</td><td><b>20.0</b></td><td>48.3</td><td>82.0</td><td>13.0</td><td>20.3</td><td>45.0</td><td>2.0</td></tr>
-                  <tr><td>5</td><td><span class="model-cell"><img class="logo" src="static/images/qwen.svg" alt="Qwen" />Qwen3-Max</span></td><td>18.5</td><td>47.0</td><td>3.0</td><td>37.2</td><td>71.0</td><td>7.0</td><td>49.7</td><td>84.0</td><td>12.0</td><td>27.5</td><td>55.0</td><td><b>9.0</b></td></tr>
-                  <tr><td>6</td><td><span class="model-cell"><img class="logo" src="static/images/deepseek.svg" alt="DeepSeek" />DeepSeek-V3.2-Exp (w/o thinking)</span></td><td>17.7</td><td>41.0</td><td>2.0</td><td>36.2</td><td>66.0</td><td>10.0</td><td>43.8</td><td>79.0</td><td>11.0</td><td>18.8</td><td>45.0</td><td>1.0</td></tr>
-                  <tr><td>7</td><td><span class="model-cell"><img class="logo" src="static/images/deepseek.svg" alt="DeepSeek" />DeepSeek-V3.1 (w/o thinking)</span></td><td>16.3</td><td>40.0</td><td>1.0</td><td>34.0</td><td>67.0</td><td>6.0</td><td>42.5</td><td>76.0</td><td>7.0</td><td>18.3</td><td>47.0</td><td>1.0</td></tr>
-                  <tr><td>8</td><td><span class="model-cell"><img class="logo" src="static/images/kimi.svg" alt="Kimi" />Kimi-K2-0905</span></td><td>15.5</td><td>39.0</td><td>2.0</td><td>35.3</td><td>68.0</td><td>9.0</td><td>42.5</td><td>78.0</td><td>10.0</td><td>22.0</td><td>46.0</td><td>4.0</td></tr>
-                  <tr><td>9</td><td><span class="model-cell"><img class="logo" src="static/images/qwen.svg" alt="Qwen" />Qwen3-235B-A22B-Instruct-2507</span></td><td>14.3</td><td>38.0</td><td>0.0</td><td>34.3</td><td>66.0</td><td>6.0</td><td>44.8</td><td>87.0</td><td>13.0</td><td>20.0</td><td>45.0</td><td>1.0</td></tr>
-                  <tr><td>10</td><td><span class="model-cell"><img class="logo" src="static/images/openai.svg" alt="OpenAI" />GPT-4.1</span></td><td>13.8</td><td>35.0</td><td>0.0</td><td>37.8</td><td>67.0</td><td>11.0</td><td>42.5</td><td>71.0</td><td>17.0</td><td>19.8</td><td>42.0</td><td>1.0</td></tr>
-                  <tr><td>11</td><td><span class="model-cell"><img class="logo" src="static/images/bytedance.svg" alt="ByteDance" />Doubao-Seed-1.6</span></td><td>10.5</td><td>29.0</td><td>0.0</td><td>37.8</td><td>65.0</td><td>12.0</td><td>39.5</td><td>73.0</td><td>9.0</td><td>18.8</td><td>39.0</td><td>3.0</td></tr>
-                  <tr><td>12</td><td><span class="model-cell"><img class="logo" src="static/images/gemini.svg" alt="Google" />Gemini-2.5-Flash (think off)</span></td><td>5.8</td><td>17.0</td><td>1.0</td><td>31.0</td><td>65.0</td><td>6.0</td><td>22.8</td><td>46.0</td><td>3.0</td><td>18.5</td><td>44.0</td><td>1.0</td></tr>
-                  <tr><td>13</td><td><span class="model-cell"><img class="logo" src="static/images/qwen.svg" alt="Qwen" />Qwen3-32B (w/o thinking)</span></td><td>4.0</td><td>12.0</td><td>0.0</td><td>16.5</td><td>37.0</td><td>3.0</td><td>21.3</td><td>47.0</td><td>2.0</td><td>3.0</td><td>11.0</td><td>0.0</td></tr>
-                  <tr><td>14</td><td><span class="model-cell"><img class="logo" src="static/images/openai.svg" alt="OpenAI" />GPT-5 (minimal)</span></td><td>4.0</td><td>9.0</td><td>0.0</td><td>30.0</td><td>64.0</td><td>6.0</td><td>27.0</td><td>60.0</td><td>2.0</td><td>7.8</td><td>22.0</td><td>0.0</td></tr>
-                  <tr><td>15</td><td><span class="model-cell"><img class="logo" src="static/images/deepseek.svg" alt="DeepSeek" />DeepSeek-V3-0324</span></td><td>3.8</td><td>12.0</td><td>0.0</td><td>25.3</td><td>53.0</td><td>5.0</td><td>34.3</td><td>71.0</td><td>5.0</td><td>10.3</td><td>26.0</td><td>1.0</td></tr>
-                </tbody>
-              </table>
-              
-              <p class="has-text-left" style="font-size:0.875rem; color: var(--text-secondary); font-style: italic; margin-top: 0.5rem;">
-                <sup>1</sup>We will periodically refresh the dataset by correcting errors, replacing outdated samples, and adding new challenging tasks. All leaderboard metrics are updated concurrently to reflect these changes.
-                <br>
-                <sup>2</sup>Due to API stability concerns, we are currently unable to evaluate some models for this benchmark. We are actively working to address these issues and to include the latest models.
-                <br>
-                <sup>3</sup>While the tasks are grounded in real-world life-serving platforms where the majority of data is originally in Chinese, we are also preparing an English version of the dataset to facilitate broader research use.
-              </p>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
 
 
     <!--BibTex citation -->
@@ -500,6 +409,7 @@
 
 
 </html>
+
 
 
 
