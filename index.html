@@ -305,10 +305,20 @@
         <div class="columns is-centered has-text-centered">
           <div class="column is-full">
             <div class="content">
-              <h2 class="title is-3">Method</h2>
+              <h2 class="title is-3">Pipeline</h2>
               <div class="level-set has-text-justified">
                   <p>
-                    VitaBench is built through a two-stage pipeline. <strong>Stage I (Framework Design)</strong> abstracts real life-serving scenarios — Delivery, In-store Consumption, and OTA — into a directed graph of simplified API tools with explicit pre-/post-conditions and inter-tool dependencies, thereby encoding domain rules directly into tool structures and enabling cross-domain composition. <strong>Stage II (Task Creation)</strong> constructs tasks from anonymized real user profiles, composite instructions, and realistic environments augmented with curated distractors and transaction histories. Each task is iteratively validated with human checks to ensure clarity while preserving multiple valid solutions, resulting in 400 tasks with comprehensive databases.
+                    AMO-Bench have built up a comprehensive multi-stage <b>construction pipeline</b> that covers the entire process from question creation to final inclusion. 
+                    This pipeline comprises four major stages: 
+                    <b>(1)Data creation, </b>
+                    all problems are independently designed by mathematics experts from top universities and educational institutions. 
+                    Beyond the final answer, each problem author must provide a detailed step-by-step solution.
+                    <b>(2)Quality review, </b>
+                    each candidate problem undergoes blind review by at least three experts to assess its quality. 
+                    <b>(3)Originality review, </b>
+                    the originality review stage aims to ensure that these newly created problems are not mere rewrites of publicly available materials, but demonstrate genuine originality.
+                    <b>(4)Difficulty review, </b>
+                    we implement a difficulty review stage to filter out problems lacking adequate complexity, to ensure that AMO-Bench presents a sufficient challenge to state-of-the-art LLMs.
                   </p>
                   <img src="static/images/method.png" alt="Overview of the VitaBench construction pipeline" class="blend-img-background center-image" style="max-width: 90%; height: auto; display: block; margin: 0 auto;" loading="lazy" />
 
@@ -466,6 +476,7 @@
 
 
 </html>
+
 
 
 
