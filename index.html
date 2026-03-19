@@ -325,6 +325,39 @@
       </div>
     </section>
 
+
+
+    <hr class="gray-separator" style="background-color: #bbb !important;">
+
+  
+    <section class="section hero is-small">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full">
+            <div class="content" style="padding-left:10%; padding-right:10%">
+              <h2 class="title is-3">Dataset Statistics</h2>
+              <div class="level-set has-text-justified">
+                <p>
+                  <b>A.Problem categories:</b> Referring several official competition syllabus, we categorize the 50 problems of AMO-Bench into the following five primary categories: 
+                  Algebraic Equations & Inequalities (11/50), Functions & Sequences (13/50), Geometry (5/50), Number Theory (9/50), and Combinatorics (12/50). 
+                  Figure a show the overall distribution of problem categories in AMO-Bench.
+                  <br>
+
+                  <b>B.Length distribution of human-annotated solutions:</b> 
+                  Since the problems in our AMO-Bench are equipped with manually annotated solutions, we can preliminarily analyze the reasoning complexity of these problems from the view of solution length. 
+                  We measure solution length in terms of token count. Additionally, we compare the distribution of solution lengths with those from AIME24 and MATH500. 
+                  Figure b illustrates the solution length distributions across these benchmarks. 
+                  It reveals that solutions in AMO-Bench exhibit significantly higher lengths, indicating that problems in this benchmark are inherently more challenging and require more complex reasoning to arrive at the final answer. 
+                </p>
+                <p style="text-align: center;">
+                   <img src="static/images/data.png" alt="Sizes of model trees" class="blend-img-background center-image" style="max-width: 90%; height: auto; padding-left:5%; padding-right:5%" loading="lazy" />
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     
 
     <hr class="gray-separator" style="background-color: #bbb !important;">
@@ -432,69 +465,8 @@
       </div>
     </section>
 
-    <hr class="gray-separator" style="background-color: #bbb !important;">
-
-    <section class="section hero is-small">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-full">
-            <div class="content" style="padding-left:10%; padding-right:10%">
-              <h2 class="title is-3">Grading Pipeline</h2>
-              <div class="level-set has-text-justified">
-                  <p>
-                      <b>A.Grading Method:</b> 
-                    General365 employs different grading approaches based on the specific answer type for each problem. 
-                    For problems requiring numerical answers (238 out of 365), we employ the <b>parser-based grading</b>. 
-                    For problems requiring other text descriptive answers (127 out of 50), we use <b>LLM-based grading</b> with GPT-4.1 serving as the grading model. 
-
-                
-                  </p>
-                  <p>
-                    <b>B.Grading Accuracy:</b>
-                    We conducted a manual quality review of the grading accuracy, <b>achieving 99.59%</b>, covering 1,460 results across four models (Gemini-2.5-Pro, Deepseek-V3.1-Thinking, Longcat-Flash-Thinking, o4-mini).
-                    
-                  </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    
-    
     
 
-    <section class="section hero is-small">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-full">
-            <div class="content" style="padding-left:10%; padding-right:10%">
-              <h2 class="title is-3">Dataset Statistics</h2>
-              <div class="level-set has-text-justified">
-                <p>
-                  <b>A.Problem categories:</b> Referring several official competition syllabus, we categorize the 50 problems of AMO-Bench into the following five primary categories: 
-                  Algebraic Equations & Inequalities (11/50), Functions & Sequences (13/50), Geometry (5/50), Number Theory (9/50), and Combinatorics (12/50). 
-                  Figure a show the overall distribution of problem categories in AMO-Bench.
-                  <br>
-
-                  <b>B.Length distribution of human-annotated solutions:</b> 
-                  Since the problems in our AMO-Bench are equipped with manually annotated solutions, we can preliminarily analyze the reasoning complexity of these problems from the view of solution length. 
-                  We measure solution length in terms of token count. Additionally, we compare the distribution of solution lengths with those from AIME24 and MATH500. 
-                  Figure b illustrates the solution length distributions across these benchmarks. 
-                  It reveals that solutions in AMO-Bench exhibit significantly higher lengths, indicating that problems in this benchmark are inherently more challenging and require more complex reasoning to arrive at the final answer. 
-                </p>
-                <p style="text-align: center;">
-                   <img src="static/images/data.png" alt="Sizes of model trees" class="blend-img-background center-image" style="max-width: 90%; height: auto; padding-left:5%; padding-right:5%" loading="lazy" />
-                </p>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="gray-separator" style="background-color: #bbb !important;">
-    
     
 
     <hr class="gray-separator" style="background-color: #bbb !important;">
