@@ -409,7 +409,7 @@
               <h2 class="title is-3">Validation of Diversity</h2>
               <div class="level-set has-text-justified">
                 <p>
-                  <b>A.Qualitative Analysis (Query Visualization):</b> To qualitatively assess the semantic breadth and distributional characteristics of General365, 
+                  <b>A.Qualitative Analysis of Semantic Space Coverage:</b> To qualitatively assess the semantic breadth and distributional characteristics of General365, 
                   we project high-dimensional query embeddings into a 2D manifold. 
                   Specifically, we leverage the <b>text-embedding-ada-002 model</b> to encode queries into 1536-dimensional vectors, followed by <b>t-SNE</b> (Perplexity=30) for dimensionality reduction. 
                   For visual clarity, coordinates are normalized to the range [−1, 1]. As illustrated, General365 exhibits a substantially more uniform and expansive distribution across the semantic space compared to existing benchmarks. 
@@ -422,7 +422,7 @@
                 </p>
 
                 <p>
-                  <b>B.Quantitative Analysis (In-Context Learning):</b> 
+                  <b>B.Quantitative Analysis of LLM-based Reasoning Similarity Scoring:</b> 
                   To rigorously quantify the logical redundancy within the benchmarks, we propose a pairwise similarity scoring method. 
                   Unlike qualitative visualization, this approach deconstructs the underlying reasoning primitives and logic evolution of task instances. 
                   Specifically, for each problem T<sub>A</sub> in General365, we retrieve its nearest neighbor T<sub>B</sub>  in the embedding space to identify the most semantically similar candidate. 
