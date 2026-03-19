@@ -304,14 +304,16 @@
                     <b>Semantic Interference</b>, 
                     <b>Implicit Information</b>, 
                     <b>Optimal Strategy</b> and 
-                    <b>Probability&Uncertainty</b>.
+                    <b>Probability & Uncertainty</b>.
                     
                   </p>
                 <br>
                   <p>
-                    <b>B.Grading Pipeline</b>: AMO-Bench employs different grading approaches based on the specific answer type for each problem. 
-                     For problems requiring numerical, set, or variable-expression answers (39 out of 50), we employ the <b>parser-based grading</b>. 
-                    For problems requiring descriptive answers (11 out of 50), we use <b>LLM-based grading</b> with o4-mini (Low) serving as the grading model.
+                    <b>B.Construction Pipeline</b>: Guided by the challenge categories taxonomy introduced above, we developed a multi-stage construction pipeline to ensure the diversity, complexity and quality of GENERAL365. The workflow consisted of four primary phases: 
+                    (1) Seed Data Construction.
+                    (2) Difficulty Filtering & Diversity Augmentation.
+                    (3) Data Post-processing.
+                    (4) Full-scale Expansion & Human Quality Review. 
                   </p>
                   
                   <img src="static/images/pipeline.png" alt="Overview of the VitaBench construction pipeline" class="blend-img-background center-image" style="max-width: 90%; height: auto; display: block; margin: 0 auto; paddng-top:2%" loading="lazy" />
