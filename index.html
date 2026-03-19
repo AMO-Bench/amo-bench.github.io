@@ -411,7 +411,7 @@
                 <p>
                   <b>A.Qualitative Analysis (Query Visualization):</b> To qualitatively assess the semantic breadth and distributional characteristics of General365, 
                   we project high-dimensional query embeddings into a 2D manifold. 
-                  Specifically, we leverage the text-embedding-ada-002 model to encode queries into 1536-dimensional vectors, followed by t-SNE (Perplexity=30) for dimensionality reduction. 
+                  Specifically, we leverage the <b>text-embedding-ada-002 model</b> to encode queries into 1536-dimensional vectors, followed by <b>t-SNE</b> (Perplexity=30) for dimensionality reduction. 
                   For visual clarity, coordinates are normalized to the range [−1, 1]. As illustrated, General365 exhibits a substantially more uniform and expansive distribution across the semantic space compared to existing benchmarks. 
                   In contrast, BBH and BBEH manifest significant "local collapse," forming isolated, high-density clusters. 
                   This phenomenon suggests that while these benchmarks contain numerous samples, they are often confined to a narrow set of linguistic templates or logical skeletons. 
@@ -425,8 +425,8 @@
                   <b>B.Quantitative Analysis (In-Context Learning):</b> 
                   To rigorously quantify the logical redundancy within the benchmarks, we propose a pairwise similarity scoring method. 
                   Unlike qualitative visualization, this approach deconstructs the underlying reasoning primitives and logic evolution of task instances. 
-                  Specifically, for each problem $T_A$ in General365, we retrieve its nearest neighbor $T_B$  in the embedding space4 to identify the most semantically similar candidate. 
-                  Then we employ Gemini-3-Pro as an expert evaluator to conduct a deep comparison of the triplets (Problem, CoT, Final Answer) for each pair. 
+                  Specifically, for each problem T<sub>A</sub> in General365, we retrieve its nearest neighbor T<sub>B</sub>  in the embedding space to identify the most semantically similar candidate. 
+                  Then we employ <b>Gemini-3-Pro as an expert evaluator</b> to conduct a deep comparison of the triplets (Problem, CoT, Final Answer) for each pair. 
                   The similarity is quantified on a scale of 0 to 5, where 0 denotes total logical independence and 5 indicates essentially identical reasoning skeletons.
                 </p>
               </div>
