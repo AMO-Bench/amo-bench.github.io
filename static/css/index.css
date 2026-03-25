@@ -45,7 +45,7 @@
 }
 
 /* The Cross-Scenarios Allover is the last numeric column overall */
-.leaderboard-table tbody tr td:last-child {
+.leaderboard-table tbody tr td:last-child:not([colspan]) {
   background: #f2f7ff; /* subtle lighter blue for body */
 }
 
