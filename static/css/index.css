@@ -44,8 +44,8 @@
   background: #e8f2ff; /* very light blue */
 }
 
-/* The Cross-Scenarios Avg@4 is the 3rd numeric column overall (after Rank, Models) */
-.leaderboard-table tbody tr td:nth-child(3) {
+/* The Cross-Scenarios Allover is the last numeric column overall */
+.leaderboard-table tbody tr td:last-child {
   background: #f2f7ff; /* subtle lighter blue for body */
 }
 
